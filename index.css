@@ -1,0 +1,60 @@
+/* Base colors */
+:root {
+  --bs-primary: #9CAF88;   /* Sage Green */
+  --bs-secondary: #F5F5DC; /* Light Beige */
+  --bs-body-bg: #ffffff;   /* Background white */
+  --bs-body-color: #333333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--bs-primary) !important;
+}
+.navbar .nav-link {
+  color: #ffffff !important;
+}
+.navbar .nav-link:hover {
+  color: var(--bs-secondary) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+.btn-primary:hover {
+  background-color: #8e9f78;
+  border-color: #8e9f78;
+}
+
+.btn-secondary {
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+  color: #333;
+}
+.btn-secondary:hover {
+  background-color: #e5e5c5;
+  border-color: #e5e5c5;
+  color: #000;
+}
+
+/* Cards */
+.card {
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.card-header {
+  background-color: var(--bs-secondary);
+  color: #333;
+}
+.card-body {
+  background-color: #ffffff;
+}
+
+/* Footer */
+footer {
+  background-color: var(--bs-primary);
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+}
