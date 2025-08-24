@@ -34,17 +34,17 @@
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Rates</a>
+                        <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Gallery</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">FAQs</a>
                     </li>
@@ -219,8 +219,74 @@
             </div>
         </section>
 
+        <!-- FAQs -->
+        <section id="faqs" class="py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="mb-4">Cat Sitting FAQs</h2>
+
+                <!-- constrain width + keep it centered -->
+                <div class="col-lg-8 mx-auto">
+
+                    <div class="mb-4">
+                        <h5 class="fw-semibold">Do you only care for cats?</h5>
+                        <p class="mb-0">Yes—our services are designed specifically for cats and their routines.</p>
+                    </div>
+
+                    <div class="pt-3 mt-3 border-top">
+                        <h5 class="fw-semibold">What’s included in a drop-in visit?</h5>
+                        <p class="mb-0">Feeding, fresh water, litter scooping, play/enrichment, light tidy-up, and a photo update.</p>
+                    </div>
+
+                    <div class="pt-3 mt-3 border-top">
+                        <h5 class="fw-semibold">What’s included in an overnight stay?</h5>
+                        <p class="mb-0">Evening & morning care (meals, litter, meds if needed), companionship, and basic home care (lights, mail, plants) per your instructions.</p>
+                    </div>
+
+                    <div class="pt-3 mt-3 border-top">
+                        <h5 class="fw-semibold">Can you administer medications?</h5>
+                        <p class="mb-0">Yes—oral or topical meds; injections by prior arrangement with clear instructions and supplies provided.</p>
+                    </div>
+
+                    <div class="pt-3 mt-3 border-top">
+                        <h5 class="fw-semibold">How many visits per day do you recommend?</h5>
+                        <p class="mb-0">Most cats do great with 1–2 visits daily. Kittens, seniors, or medical needs may benefit from 2+ visits.</p>
+                    </div>
+
+                    <div class="pt-3 mt-3 border-top">
+                        <h5 class="fw-semibold">Will I get updates?</h5>
+                        <p class="mb-0">Absolutely—daily check-ins with photos or videos so you can relax while you’re away.</p>
+                    </div>
+
+                    <div class="pt-3 mt-3 border-top">
+                        <h5 class="fw-semibold">My cat is shy/anxious—can you handle that?</h5>
+                        <p class="mb-0">Yes. We move slowly, follow your routines, and let shy cats warm up on their terms.</p>
+                    </div>
+
+                    <div class="pt-3 mt-3 border-top">
+                        <h5 class="fw-semibold">Do you care for multiple cats?</h5>
+                        <p class="mb-0">Yes—households with multiple cats are welcome. Small add-on per extra cat may apply.</p>
+                    </div>
+
+                    <div class="pt-3 mt-3 border-top">
+                        <h5 class="fw-semibold">How far in advance should I book?</h5>
+                        <p class="mb-0">1–2 weeks is ideal (earlier for holidays). Last-minute requests accepted when availability allows.</p>
+                    </div>
+
+                    <div class="pt-3 mt-3 border-top">
+                        <h5 class="fw-semibold">How do you handle home access?</h5>
+                        <p class="mb-0">We can use a key, lockbox, or smart lock—whatever you prefer. Details are confirmed at the meet-and-greet.</p>
+                    </div>
+
+                    <p class="mt-4">
+                        Don’t see your question? <a href="#contact" class="link-dark fw-semibold">Contact us</a> or check our
+                        <a href="#rates" class="link-dark fw-semibold">Rates</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact / Booking -->
-        <section id="contact" class="py-5">
+        <!-- <section id="contact" class="py-5">
             <div class="container">
             <h2 class="text-center mb-4">Book a Visit</h2>
             <form class="row g-3">
@@ -244,8 +310,48 @@
                 </div>
             </form>
             </div>
+        </section> -->
+
+        <!-- Contact / Booking -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Book a Visit</h2>
+                <form name="cat-sitting-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="row g-3"> 
+                    <!-- Netlify hidden fields -->
+                    <input type="hidden" name="form-name" value="cat-sitting-contact" />
+                    <div class="d-none">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                    </div>
+
+                    <!-- Form fields -->
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" name="phone" placeholder="Your Phone">
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-select" name="service" required>
+                        <option value="" disabled selected>Select a Service</option>
+                        <option value="cat-sitting">Cat Sitting</option>
+                        <option value="overnight-stay">Overnight Stay</option>
+                        <option value="pet-check-in">Pet Check-In</option>
+                        <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" name="message" rows="4" placeholder="Additional Details"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Submit Request</button>
+                    </div>
+                </form>
+            </div>
         </section>
-        
+
         <!-- Footer -->
         <footer class="bg-dark text-white text-center py-3">
             <p class="mb-0">&copy; 2025 Kasey's Cats & Paws of North County | All Rights Reserved</p>
