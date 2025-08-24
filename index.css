@@ -1,9 +1,46 @@
 /* Base colors */
 :root {
   --bs-primary: #9CAF88;   /* Sage Green */
-  --bs-secondary: #F5F5DC; /* Light Beige */
+  --bs-secondary: #d3d3bb; /* Light Beige */
   --bs-body-bg: #ffffff;   /* Background white */
   --bs-body-color: #333333;
+}
+
+body {
+  background-color: var(--bs-body-bg);
+}
+
+/* Brand styling */
+.brand-main {
+  font-weight: 700;
+  color: #333333; /* Sage Green */
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.brand-sub {
+  font-size: 0.75rem;
+  color: #333333;
+  line-height: 1; /* tighter spacing */
+}
+
+/* Optional: icon spacing (Bootstrap icons) */
+.brand-main i {
+  font-size: 1.25rem;
+  color: #9CAF88;
+}
+
+.hero {
+  min-height: 80vh; /* doesn’t force full screen */
+  background: url("your-image-link.jpg") center/cover no-repeat, #fdfdfd; 
+  padding: 2rem;
+}
+
+.hero-card {
+  max-width: 600px;
+  background-color: #fffbea; /* light beige */
+  border-radius: 1rem;
 }
 
 /* Navbar */
