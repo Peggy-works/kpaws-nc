@@ -12,8 +12,7 @@ body {
 
 /* Brand styling */
 .brand-main {
-  font-weight: 700;
-  color: #333333; /* Sage Green */
+  font-weight: 700; 
   font-size: 1.25rem;
   display: flex;
   align-items: center;
@@ -31,15 +30,27 @@ body {
   color: #9CAF88;
 }
 
+/* .hero {
+  height: 100vh; 
+  width: 100vw;  
+  overflow: hidden;
+  padding: none;
+}
+
+.hero-image img {
+  height: 100%;
+  object-fit: cover; 
+} */
+
 .hero {
-  min-height: 80vh; /* doesn’t force full screen */
+  min-height: 80vh; 
   background: url("your-image-link.jpg") center/cover no-repeat, #fdfdfd; 
   padding: 2rem;
 }
 
 .hero-card {
   max-width: 600px;
-  background-color: #fffbea; /* light beige */
+  background-color: #fffbea;
   border-radius: 1rem;
 }
 
@@ -47,11 +58,18 @@ body {
 .navbar {
   background-color: var(--bs-primary) !important;
 }
-.navbar .nav-link {
-  color: #ffffff !important;
+.navbar .nav-link { 
+    font-weight: 600;
+    text-decoration: underline;
 }
 .navbar .nav-link:hover {
   color: var(--bs-secondary) !important;
+}
+
+.navbar .navbar-nav .nav-link.active {
+  color: #f8d210; /* highlight color */
+  border-bottom: 3px solid #f8d210;
+  padding-bottom: 6px;
 }
 
 /* Buttons */
