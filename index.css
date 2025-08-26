@@ -2,25 +2,50 @@
 :root {
   --bs-primary: #9CAF88;   /* Sage Green */
   --bs-secondary: #d3d3bb; /* Light Beige */
-  --bs-body-bg: #ffffff;   /* Background white */
+  --bs-body-bg: #FFFCF7;   /* Background white */
   --bs-body-color: #333333;
+  --bs-navbar-bg: #3B4C8C;
+  --btn-text-color: #FFFCF7;
+  --btn-bg-color: #8A2B3D;
+
+  /* Brand / Accents */
+  --color-slate-blue: #3B4C8C;
+  --color-taupe: #C6B7A0; 
+  --color-dark-gold: #C99A48;
+  --color-burgundy: #8A2B3D;
+
+  /* Background */
+  --color-bg: #FFFCF7;
+  --color-bg-alt: #C6B7A0;
+  --color-bg-alt-2: #f5f2ee;
+
+  /* Text */
+  --color-header: #3B4C8C;
+  --color-text: #333333;
+  --color-tagline: #C99A48;
+
+  /* Buttons */
+  --color-btn-primary-bg: #8A2B3D;
+  --color-btn-primary-text: #FFFCF7;
+  --color-btn-primary-hover: #6E1F2F;
 }
 
 body {
-  background-color: var(--bs-body-bg);
+  background-color: var(--color-bg);
 }
 
 /* Brand styling */
 .brand-main {
   font-weight: 700; 
   font-size: 1.25rem;
+  color: var(--color-bg);
   display: flex;
   align-items: center;
 }
 
 .brand-sub {
   font-size: 0.75rem;
-  color: #333333;
+  color: var(--color-bg);
   line-height: 1; /* tighter spacing */
 }
 
@@ -46,6 +71,7 @@ body {
   min-height: 80vh; 
   background: url("your-image-link.jpg") center/cover no-repeat, #fdfdfd; 
   padding: 2rem;
+  background-color: var(--color-bg-alt-2);
 }
 
 .hero-card {
@@ -56,20 +82,38 @@ body {
 
 /* Navbar */
 .navbar {
-  background-color: var(--bs-primary) !important;
+    background-color: var(--color-slate-blue) !important;
 }
 .navbar .nav-link { 
     font-weight: 600;
     text-decoration: underline;
+    color: var(--color-bg);
 }
 .navbar .nav-link:hover {
-  color: var(--bs-secondary) !important;
+    color: var(--bs-secondary) !important;
 }
 
 .navbar .navbar-nav .nav-link.active {
-  color: #f8d210; /* highlight color */
-  border-bottom: 3px solid #f8d210;
-  padding-bottom: 6px;
+    color: #f8d210; /* highlight color */
+    border-bottom: 3px solid #f8d210;
+    padding-bottom: 6px;
+}
+
+.navbar-toggler {
+    background-color: var(--color-bg);
+    color: var(--color-bg-alt);
+}
+
+.about-us {
+    background-color: var(--color-bg-alt-2);
+}
+
+.testimonials {
+    background-color: var(--color-bg-alt-2);
+}
+
+.contact {
+    background-color: var(--color-bg-alt-2);
 }
 
 /* Buttons */
@@ -83,9 +127,9 @@ body {
 }
 
 .btn-secondary {
-  background-color: var(--bs-secondary);
-  border-color: var(--bs-secondary);
-  color: #333;
+  background-color: var(--btn-bg-color);
+  border-color: var(--btn-bg-color);
+  color: var(--btn-text-color); 
 }
 .btn-secondary:hover {
   background-color: #e5e5c5;
@@ -106,9 +150,15 @@ body {
   background-color: #ffffff;
 }
 
+
+
 /* Footer */
-footer {
-  background-color: var(--bs-primary);
+.bottom-footer {
+    background-color: var(--color-slate-blue);
+    color: var(--color-bg);
+}
+
+footer { 
   color: #fff;
   padding: 1.5rem 0;
   text-align: center;
