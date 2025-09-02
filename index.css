@@ -105,7 +105,7 @@ body {
 }
 
 .about-us {
-    background-color: var(--color-bg-alt-2);
+    /* background-color: var(--color-bg-alt-2); */
 }
 
 .testimonials {
@@ -150,6 +150,77 @@ body {
   background-color: #ffffff;
 }
 
+/* Section header */
+.section-heading{
+  color: var(--color-burgundy);
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+
+/* Card styling */
+.service-card{
+  border: 1px solid #e9e6de;
+  border-radius: 1rem;
+  background: #fff;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+  overflow: hidden;
+}
+.service-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+  border-color: var(--color-burgundy);
+}
+
+/* Subtle beige banner at top of card */
+.service-banner{
+  height: 10px;
+  background: var(--color-burgundy);
+}
+
+.service-card .card-title{
+  color: var(--color-slate-blue);
+  font-weight: 700;
+  margin-bottom: .25rem;
+}
+
+.price-tag{
+  display: inline-block;
+  background: var(--color-slate-blue);
+  color: #fff;
+  padding: .35rem .65rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: .95rem;
+}
+
+.price-sub{
+  color: #6b6b6b;
+  font-size: .9rem;
+}
+
+.bullet{
+  margin: 0;
+  padding-left: 1rem;
+}
+.bullet li{
+  margin: .2rem 0;
+}
+
+/* Section intro blurb */
+.lead-muted{
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #555;
+}
+
+/* Holiday/footnote callout */
+.callout{
+  background: var(--color-burgundy);
+  border: 1px solid #ece7db;
+  border-radius: .75rem;
+  padding: .85rem 1rem;
+  color: #ffffff;
+}
 
 
 /* Footer */

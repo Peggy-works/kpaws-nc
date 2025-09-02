@@ -1,0 +1,7 @@
+To Do:
+------
+1. Wufu intake form plugin for website
+
+Current Issues:
+---------------
++ Using the nav links scrolls to the specified section, but the navbar height isnt taken into account so it overlaps the section header.
