@@ -1,7 +1,9 @@
 To Do:
 ------
 1. Wufu intake form plugin for website
+2. Update the other sections with the information Kasey has on the google doc
 
 Current Issues:
 ---------------
 + Using the nav links scrolls to the specified section, but the navbar height isnt taken into account so it overlaps the section header.
++ Look into the book a visit button, on mobile devices it doesnt return back to its original color (burgundy)

@@ -222,6 +222,11 @@ body {
   color: #ffffff;
 }
 
+.callout-2 {
+  color: #ffffff;
+  font-size: .9rem;
+}
+
 
 /* Footer */
 .bottom-footer {
