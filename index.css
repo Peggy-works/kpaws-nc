@@ -25,7 +25,7 @@
   --color-tagline: #C99A48;
 
   /* Buttons */
-  --color-btn-primary-bg: #8A2B3D;
+  --color-btn-primary-bg: #8A2B3D; 
   --color-btn-primary-text: #FFFCF7;
   --color-btn-primary-hover: #6E1F2F;
 }
@@ -86,7 +86,7 @@ body {
 }
 .navbar .nav-link { 
     font-weight: 600;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: var(--color-bg);
 }
 .navbar .nav-link:hover {
@@ -117,14 +117,14 @@ body {
 }
 
 /* Buttons */
-.btn-primary {
+/* .btn-primary {
   background-color: var(--bs-primary);
   border-color: var(--bs-primary);
 }
 .btn-primary:hover {
   background-color: #8e9f78;
   border-color: #8e9f78;
-}
+} */
 
 .btn-secondary {
   background-color: var(--btn-bg-color);
@@ -132,9 +132,10 @@ body {
   color: var(--btn-text-color); 
 }
 .btn-secondary:hover {
-  background-color: #e5e5c5;
-  border-color: #e5e5c5;
-  color: #000;
+  background-color: var(--color-btn-primary-hover);
+  border-color: var(--color-btn-primary-hover);
+  /* border-color: #e5e5c5 */
+  /* color: #000; */
 }
 
 /* Cards */
