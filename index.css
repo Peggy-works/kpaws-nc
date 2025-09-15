@@ -214,6 +214,10 @@ body {
   color: #555;
 }
 
+.pending {
+  color: #343434b5;
+}
+
 /* Holiday/footnote callout */
 .callout{
   background: var(--color-burgundy);
