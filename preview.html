@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Policies Preview - FAQ Style</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Optional: Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    h2 {
+      font-weight: 700;
+    }
+    .accordion-button::after {
+      display: none; /* Hide default arrow */
+    }
+    .accordion-button.collapsed .icon-toggle::before {
+      content: "+";
+    }
+    .accordion-button .icon-toggle::before {
+      content: "–";
+      font-size: 1.2rem;
+      margin-right: 8px;
+    }
+    .accordion-button {
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="py-5" id="policies">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Policies</h2>
+      <p class="text-center text-muted mb-5">
+        A quick overview of how we keep things simple and stress-free. 
+        For full details, see our <a href="policies.html">Policies page</a>.
+      </p>
+
+      <div class="accordion shadow-sm" id="policiesAccordion">
+        
+        <!-- Booking -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <span class="icon-toggle"></span> Booking Windows
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#policiesAccordion">
+            <div class="accordion-body">
+              Please book at least <strong>48 hours in advance</strong> to secure your spot. Holidays may require earlier notice.
+            </div>
+          </div>
+        </div>
+
+        <!-- Cancellations -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <span class="icon-toggle"></span> Cancellations & Refunds
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#policiesAccordion">
+            <div class="accordion-body">
+              Full refund if cancelled more than 24 hours in advance. 50% fee within 24 hours. No-shows are billed in full.
+            </div>
+          </div>
+        </div>
+
+        <!-- Payment -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <span class="icon-toggle"></span> Payment Due Dates
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#policiesAccordion">
+            <div class="accordion-body">
+              Payment is due at the time of booking. We accept Venmo, Zelle, and credit card payments.
+            </div>
+          </div>
+        </div>
+
+        <!-- Veterinary -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <span class="icon-toggle"></span> Veterinary / Emergencies
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#policiesAccordion">
+            <div class="accordion-body">
+              We’re authorized to seek emergency vet care for your pet if needed. All expenses are the responsibility of the pet owner.
+            </div>
+          </div>
+        </div>
+
+        <!-- Household -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <span class="icon-toggle"></span> Household Tasks
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#policiesAccordion">
+            <div class="accordion-body">
+              We’ll bring in mail, water plants, and take out trash. Tasks should be under 10 minutes; larger requests may require extra fees.
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="policies.html" class="btn btn-outline-primary">View Full Policies</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

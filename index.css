@@ -207,6 +207,23 @@ body {
   margin: .2rem 0;
 }
 
+/* Policy Preview section */
+
+.accordion-button::after {
+  display: none; /* Hide default arrow */
+}
+.accordion-button.collapsed .icon-toggle::before {
+  content: "+";
+}
+.accordion-button .icon-toggle::before {
+  content: "–";
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+.accordion-button {
+  font-weight: 500;
+}
+
 /* Section intro blurb */
 .lead-muted{
   max-width: 800px;
